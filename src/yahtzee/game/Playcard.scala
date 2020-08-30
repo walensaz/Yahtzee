@@ -6,11 +6,9 @@ case class Playcard() {
 
   val allScores = ScoreType.All
 
-  private var playerScores: Vector[ScoreType] = Vector.empty
+  private var playerScores: Vector[Score] = Vector.empty
 
-  def addUsedScore(scoreType: ScoreType): Unit = playerScores = playerScores :+ scoreType
-
-
+  def addUsedScore(score: Score): Unit = playerScores = playerScores :+ score
 }
 
 case class Score(scoreType: ScoreType, score: Int)

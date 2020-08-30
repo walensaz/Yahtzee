@@ -1,6 +1,6 @@
 package yahtzee.game
 
-case class Game(players: List[Player]) {
+case class Game(players: List[Player], id: Int) {
 
 
 
